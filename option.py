@@ -1,0 +1,11 @@
+import argparse
+parser = argparse.ArgumentParser(description='weakly-multi')
+parser.add_argument('--gpus', default=[0, 1, 2, 3], help='gpus')
+parser.add_argument('--lr', type=str, default='[0.001]*200', help='learning rates for steps(list form)')
+parser.add_argument('--batch-size', type=int, default=16, help='number of instances in a batch of data (default: 16)')
+parser.add_argument('--workers', default=0, help='number of workers in dataloader')
+parser.add_argument('--model-name', default='weakly-multi', help='name to save model')
+parser.add_argument('--pretrained-model', type=str, default="./pretrained/best.pkl", help='ckpt for pretrained model')
+parser.add_argument('--max-epoch', type=int, default=20, help='maximum iteration to train (default: 200)')
+parser.add_argument('--source', type=str, default='' ,help='path to feature')
+parser.add_argument('--output', type=str, default='./ckpt', help='your output path')
