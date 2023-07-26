@@ -1,0 +1,6 @@
+cython
+pycocotools
+scipy
+opencv-python
+sklearn
+numpy
