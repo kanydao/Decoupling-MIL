@@ -1,5 +1,7 @@
 # Decoupling MIL Transformer-based Network for Weakly Supervised Polyp Detection
 
+Code for our BIBM 2023 paper.
+
 Contributed by Hantao Zhang, Risheng Xie, Shouhong wan, and peiquan jin
 
 ![](paper_images/framework.png)
@@ -20,7 +22,7 @@ pip install -r requirements.txt
 
 ### Dataset
 
-The dataset consists of 517 videos. Specifically, we have gathered 72 normal videos without polyps and 368 abnormal videos with polyps for training purposes. Additionally, 17 normal videos and 60 abnormal videos are reserved for testing. The detailed configuration of the dataset will be made publicly available upon acceptance of the paper.
+The dataset consists of 517 videos. Specifically, we have gathered 72 normal videos without polyps and 368 abnormal videos with polyps for training purposes. Additionally, 17 normal videos and 60 abnormal videos are reserved for testing.  See data.csv for more details.
 
 
 
@@ -42,5 +44,5 @@ python main_adapter.py
 
 ## License
 
-HOD is released under the MIT license. See [LICENSE](./LICENSE) for additional details.
+The work is released under the MIT license. 
 
